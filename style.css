@@ -551,7 +551,6 @@ body {
   pointer-events: none;
 }
 
-/* Sembunyikan tech tags yang lama */
 .card-tech {
   display: none;
 }
@@ -903,8 +902,6 @@ body {
   }
 }
 
-/* RESPONSIVE DESIGN - SEMUA UKURAN LAYAR */
-
 /* Desktop Kecil / Laptop */
 @media (max-width: 1024px) {
   .hero-container {
@@ -956,7 +953,6 @@ body {
 
 /* Mobile Landscape */
 @media (max-width: 768px) {
-  /* Navbar Mobile - Dropdown Kecil */
   .hamburger {
     display: block;
   }

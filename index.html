@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Muhamad Sahbani</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">AbimDev</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hello Everyone, I'm Muhamad Sahbani</h1>
+                <h2 class="hero-subtitle"><span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+                <p class="hero-description">
+                    Frontend Developer dan UI Designer yang berfokus pada pengalaman pengguna, desain modern, dan
+                    performa optimal. Seorang Tech Enthusiast yang terus belajar dan membangun solusi digital yang
+                    inovatif.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#portfolio" class="btn btn-outline">View Work</a>
+                </div>
+                <div class="hero-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="img/ben utama.jpeg" alt="Muhamad Sahbani">
+                    <div class="image-backdrop"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Frontend Developer Based in Indonesia</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec taciti tincidunt congue id
+                        lobortis pretium. Sed euismod nisi at nibh ultricies, nec aliquam lectus egestas. Ut blandit
+                        quis risus sed dignissim bibendum malesuada.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec taciti tincidunt congue id
+                        lobortis pretium. Sed euismod nisi at nibh ultricies.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Done</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-skills">
+                    <div class="skill-item">
+                        <span>HTML/CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>React</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>UI/UX Design</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section - Updated dengan Card Baru -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="certificates">Certificates</button>
+            </div>
+            <div class="portfolio-grid-new" id="portfolioGrid">
+                <!-- Web Presensi -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="project/project1.png" alt="Web Presensi" class="portfolio-img">
+                        </div>
+                        <!-- Tech tags di pojok kanan atas GAMBAR -->
+                        <div class="image-tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Web Presensi</h3>
+                        <div class="card-issuer">
+                            <i class="fas fa-building"></i>
+                            <span>Personal Project</span>
+                        </div>
+                        <div class="card-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/username/web-presensi" target="_blank" class="source-code">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notes App -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="project/project2.png" alt="Notes App" class="portfolio-img">
+                        </div>
+                        <!-- Tech tags di pojok kanan atas GAMBAR -->
+                        <div class="image-tech-tags">
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Notes App</h3>
+                        <div class="card-issuer">
+                            <i class="fas fa-building"></i>
+                            <span>Personal Project</span>
+                        </div>
+                        <div class="card-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/username/notes-app" target="_blank" class="source-code">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website E-Commerce -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="project/project3.png" alt="Website E-Commerce" class="portfolio-img">
+                        </div>
+                        <!-- Tech tags di pojok kanan atas GAMBAR -->
+                        <div class="image-tech-tags">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Website E-Commerce</h3>
+                        <div class="card-issuer">
+                            <i class="fas fa-building"></i>
+                            <span>Personal Project</span>
+                        </div>
+                        <div class="card-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/username/ecommerce" target="_blank" class="source-code">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Edukasi Anak -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="project/project4.jpg" alt="Game Edukasi Anak" class="portfolio-img">
+                        </div>
+                        <!-- Tech tags di pojok kanan atas GAMBAR -->
+                        <div class="image-tech-tags">
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Game Edukasi Anak</h3>
+                        <div class="card-issuer">
+                            <i class="fas fa-building"></i>
+                            <span>Personal Project</span>
+                        </div>
+                        <div class="card-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>2023</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/username/game-edukasi" target="_blank" class="source-code">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Siswa App (Mobile) -->
+                <div class="portfolio-card" data-category="mobile">
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="project/project5.jpg" alt="Data Siswa App" class="portfolio-img">
+                        </div>
+                        <!-- Tech tags di pojok kanan atas GAMBAR -->
+                        <div class="image-tech-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Data Siswa App</h3>
+                        <div class="card-issuer">
+                            <i class="fas fa-building"></i>
+                            <span>Personal Project</span>
+                        </div>
+                        <div class="card-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/username/data-siswa-app" target="_blank" class="source-code">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website Peminjaman Barang -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="project/project7.png" alt="Website Peminjaman Barang" class="portfolio-img">
+                        </div>
+                        <!-- Tech tags di pojok kanan atas GAMBAR -->
+                        <div class="image-tech-tags">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Website Peminjaman Barang</h3>
+                        <div class="card-issuer">
+                            <i class="fas fa-building"></i>
+                            <span>Personal Project</span>
+                        </div>
+                        <div class="card-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/username/peminjaman-barang" target="_blank" class="source-code">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SIM Aset 79 -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="project/projectpkl.png" alt="Sistem Informasi Manajemen Aset 79"
+                                class="portfolio-img">
+                        </div>
+                        <!-- Tech tags di pojok kanan atas GAMBAR -->
+                        <div class="image-tech-tags">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">ReactJS</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sistem Informasi Manajemen Aset 79</h3>
+                        <div class="card-issuer">
+                            <i class="fas fa-building"></i>
+                            <span>PT Padepokan Tujuh Sembilan</span>
+                        </div>
+                        <div class="card-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>2025</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/username/sim-aset-79" target="_blank" class="source-code">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal untuk Zoom Gambar -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="service" class="services">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec taciti tincidunt congue.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec taciti tincidunt congue.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec taciti tincidunt congue.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec taciti tincidunt congue.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>lucius.meshach@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+62 812 3456 7890</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Muhamad Sahbani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

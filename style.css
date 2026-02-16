@@ -627,11 +627,7 @@ body {
   transform: translateX(5px);
 }
 
-/* Untuk sertifikat tanpa link GitHub */
-.portfolio-card[data-category="certificates"] .source-code {
-  display: none;
-}
-
+/* Sembunyikan tech tags untuk sertifikat */
 .portfolio-card[data-category="certificates"] .image-tech-tags {
   display: none;
 }
@@ -857,7 +853,7 @@ body {
 }
 
 .modal-close:hover {
-  color: #ff4444;
+  color: #4a90e2;
   transform: scale(1.1);
 }
 
